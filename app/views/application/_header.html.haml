@@ -1,0 +1,68 @@
+/ ======= Top Bar =======
+#topbar.d-none.d-lg-flex.align-items-center.fixed-top
+  .container.d-flex
+    .contact-info.mr-auto
+      %i.bx.bxs-envelope
+      %a{:href => "mailto:miguel@mydanservices.com"} miguel@mydanservices.com
+      %i.bx.bxs-phone
+      +1 416 418 5374
+    -# .social-links
+    -#   %a.twitter{:href => "#"}
+    -#     %i.icofont-twitter
+    -#   %a.facebook{:href => "#"}
+    -#     %i.icofont-facebook
+    -#   %a.instagram{:href => "#"}
+    -#     %i.icofont-instagram
+    -#   %a.skype{:href => "#"}
+    -#     %i.icofont-skype
+    -#   %a.linkedin{:href => "#"}
+    -#     %i.icofont-linkedin
+/ ======= Header =======
+%header#header.fixed-top
+  .container.d-flex.align-items-center
+    %h1.logo.mr-auto
+      %a{:href => "index.html"} Mydan Services Inc.
+    / Uncomment below if you prefer to use an image logo
+    / <a href="index.html" class="logo mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>
+    %nav.nav-menu.d-none.d-lg-block
+      %ul
+        %li.active
+          %a{:href => "#hero"} Home
+        %li
+          %a{:href => "#about"} About
+        %li
+          %a{:href => "#services"} Services
+        %li
+          %a{:href => "#portfolio"} Gallery
+        %li
+          %a{:href => "#pricing"} Pricing
+        %li
+          %a{:href => "#team"} Team
+        -# %li.drop-down
+        -#   %a{:href => ""} Drop Down
+        -#   %ul
+        -#     %li
+        -#       %a{:href => "#"} Drop Down 1
+        -#     %li.drop-down
+        -#       %a{:href => "#"} Deep Drop Down
+        -#       %ul
+        -#         %li
+        -#           %a{:href => "#"} Deep Drop Down 1
+        -#         %li
+        -#           %a{:href => "#"} Deep Drop Down 2
+        -#         %li
+        -#           %a{:href => "#"} Deep Drop Down 3
+        -#         %li
+        -#           %a{:href => "#"} Deep Drop Down 4
+        -#         %li
+        -#           %a{:href => "#"} Deep Drop Down 5
+        -#     %li
+        -#       %a{:href => "#"} Drop Down 2
+        -#     %li
+        -#       %a{:href => "#"} Drop Down 3
+        -#     %li
+        -#       %a{:href => "#"} Drop Down 4
+        %li
+          %a{:href => "#contact"} Contact
+    / .nav-menu
+/ End Header

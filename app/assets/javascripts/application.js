@@ -7,4 +7,5 @@
 //= require owl.carousel/owl.carousel.min
 //= require aos/aos
 //= require main
+//= require common
 //= require_tree .

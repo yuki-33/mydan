@@ -141,7 +141,11 @@ h1, h2, h3, h4, h5, h6 {
 #topbar .contact-info i.bx.bxs-phone {
   margin-left: 15px;
 }
-
+//add
+#topbar .contact-info.contact-right {
+  margin-right: 20px;
+}
+//
 #topbar .social-links a {
   color: rgba(255, 255, 255, 0.5);
   padding-left: 15px;
@@ -210,6 +214,16 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 26px;
   }
 }
+
+//add
+@media (max-width: 390px) {
+  #header .logo {
+    font-size: 26px;
+    padding-right: 50px;
+  }
+}
+//
+
 .header-inner-pages {
   background: rgba(0, 0, 0, 0.9) !important;
 }
@@ -491,6 +505,43 @@ h1, h2, h3, h4, h5, h6 {
   border-color: #00008B;
 }
 
+//add
+#hero h3 {
+  color: #fff;
+  margin: 0 0 0 10px;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+#hero p {
+  color: #fff;
+}
+
+#hero .cta-btn {
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 28px;
+  transition: 0.5s;
+  // margin-top: 10px;
+  margin: 10px 10px;
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+#hero .cta-btn.right {
+  margin: 0 0 0 20px;
+}
+
+#hero .cta-btn:hover {
+  background: #00008B;
+  border: 2px solid #00008B;
+}
+//
+
 @media (min-width: 1024px) {
   #hero {
     background-attachment: fixed;
@@ -513,8 +564,12 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 24px;
     margin-bottom: 30px;
   }
+//add
+  #hero .cta-btn {
+    margin: 10px 5px 10px 5px;
+  }
 }
-
+//
 /*--------------------------------------------------------------
 # Sections General
 --------------------------------------------------------------*/
@@ -607,24 +662,24 @@ section {
 }
 
 .why-us .box {
-  padding: 50px 30px;
+  padding: 30px 20px;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
   transition: all ease-in-out 0.3s;
 }
 
-.why-us .box span {
-  display: block;
-  font-size: 28px;
-  font-weight: 700;
-  color: #6A5ACD;
-}
+// .why-us .box span {
+//   display: block;
+//   font-size: 28px;
+//   font-weight: 700;
+//   color: #6A5ACD;
+// }
 
 .why-us .box h4 {
-  font-size: 24px;
-  font-weight: 600;
+  font-size: 28px;
+  font-weight: 700;
   padding: 0;
-  margin: 20px 0;
-  color: #191919;
+  margin: 10px 0;
+  color: #6A5ACD;
 }
 
 .why-us .box p {
@@ -678,9 +733,10 @@ section {
 # Services
 --------------------------------------------------------------*/
 .services .icon-box {
+  width: 100%;
   text-align: center;
-  padding: 80px 20px;
-  transition: all ease-in-out 0.3s;
+  padding: 70px 20px;
+  transition: all ease-in-out 0.5s;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
 }
 
@@ -715,25 +771,25 @@ section {
 }
 
 .services .icon-box h4 {
+  color: #191919;
   font-weight: 700;
   margin-bottom: 15px;
   font-size: 24px;
 }
 
-.services .icon-box h4 a {
-  color: #191919;
-}
-
 .services .icon-box p {
+  transition: all ease-in-out 0.5s;
   line-height: 24px;
   font-size: 14px;
   margin-bottom: 0;
+  display: none;
 }
 
 .services .icon-box:hover {
   background: #00008B;
   border-color: #00008B;
-  padding: 70px 20px 90px 20px;
+  padding: 80px 20px;
+  height: auto;
 }
 
 .services .icon-box:hover .icon {
@@ -748,8 +804,9 @@ section {
   background: #6A5ACD;
 }
 
-.services .icon-box:hover h4 a, .services .icon-box:hover p {
+.services .icon-box:hover h4, .services .icon-box:hover p {
   color: #fff;
+  display: block;
 }
 
 /*--------------------------------------------------------------
@@ -791,6 +848,12 @@ section {
   border: 2px solid #00008B;
 }
 
+// @media (max-width: 768px) {
+//   .cta {
+//     background: linear-gradient(rgba(2, 2, 2, 0.5), rgba(0, 0, 0, 0.5)), url("../img/ernest-brillo.jpg") fixed center center;
+//     background-size: cover;
+//     }
+// }
 /*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/
@@ -1479,8 +1542,19 @@ section {
   color: #262667;
 }
 
-@media (max-width: 575px) {
+//add
+@media (max-width: 768px) {
   #footer .footer-top .footer-info {
-    margin: -20px 0 30px 0;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    padding: 30px 20px;
   }
 }
+//
+//
+// @media (max-width: 575px) {
+//   #footer .footer-top .footer-info {
+//     margin: -20px 0 30px 0;
+//   }
+// }

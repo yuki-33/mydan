@@ -3,8 +3,10 @@
   .container.position-relative{"data-aos" => "fade-up", "data-aos-delay" => "500"}
     %h1 Welcome to Mydan Services
     %h2 Licensed Electrical Contracting
-    %a.btn-get-started.scrollto{:href => "#about"} Get Started
-/ End Hero
+    %h3 Contact Us
+    -# %p Contact Us
+    = link_to "Call", "tel:14164185374", class: 'cta-btn'
+    = link_to "Email", "mailto:miguel@mydanservices.com", class: 'cta-btn right'
 %main#main
   / ======= About Section =======
   %section#about.about
@@ -50,112 +52,70 @@
             Our experience, knowledge, dedication, and excellent customer service is your guarantee for fast, effective and reliable service.
             We are an innovative company that will find safe, cost-effective, and reliable solutions to any problem.
             We are fully insured and licensed by the Electrical Safety Authority.
-  / End About Section
   / ======= Why Us Section =======
-  %section#why-us.why-us
-    .container
-      .row
-        .col-lg-4{"data-aos" => "fade-up"}
-          .box
-            %span 01
-            %h4 Customer Service
-            %p ???
-        .col-lg-4.mt-4.mt-lg-0{"data-aos" => "fade-up", "data-aos-delay" => "150"}
-          .box
-            %span 02
-            %h4 Save On Energy
-            %p Find out how Mydan Services can help you save up to 50% on your energy consumption
-        .col-lg-4.mt-4.mt-lg-0{"data-aos" => "fade-up", "data-aos-delay" => "300"}
-          .box
-            %span 03
-            %h4 ?
-            %p
-  / End Why Us Section
+  -# %section#why-us.why-us
+  -#   .container
+  -#     .row
+  -#       .col-lg-12{"data-aos" => "fade-up"}
+  -#         .box
+  -#           -# %span Clients
+  -#           %h4 Clients
+  -#           %p add "js modal" here and open clients logos
   / ======= Clients Section =======
-  %section#clients.clients
-    .container{"data-aos" => "zoom-in"}
-      .row.d-flex.align-items-center
-        -# .col-lg-2.col-md-4.col-6
-        -#   %img.img-fluid{:alt => "", :src => "assets/img/clients/client-1.png"}/
-        -# .col-lg-2.col-md-4.col-6
-        -#   %img.img-fluid{:alt => "", :src => "assets/img/clients/client-2.png"}/
-        -# .col-lg-2.col-md-4.col-6
-        -#   %img.img-fluid{:alt => "", :src => "assets/img/clients/client-3.png"}/
-        -# .col-lg-2.col-md-4.col-6
-        -#   %img.img-fluid{:alt => "", :src => "assets/img/clients/client-4.png"}/
-        -# .col-lg-2.col-md-4.col-6
-        -#   %img.img-fluid{:alt => "", :src => "assets/img/clients/client-5.png"}/
-        -# .col-lg-2.col-md-4.col-6
-        -#   %img.img-fluid{:alt => "", :src => "assets/img/clients/client-6.png"}/
-  / End Clients Section
+  %section#clients
+    .clients
+      .container
+        .section-title{"data-aos" => "zoom-in"}
+          %span Clients
+          %h2 Our Clients
+      .container{"data-aos" => "zoom-in"}
+        .row.d-flex.align-items-center
+          .col-lg-2.col-md-4.col-6
+            %img.img-fluid{:alt => "", :src => "img/clients/client-1.png"}/
+          .col-lg-2.col-md-4.col-6
+            %img.img-fluid{:alt => "", :src => "img/clients/client-2.png"}/
+          .col-lg-2.col-md-4.col-6
+            %img.img-fluid{:alt => "", :src => "img/clients/client-3.png"}/
+          .col-lg-2.col-md-4.col-6
+            %img.img-fluid{:alt => "", :src => "/img/clients/client-4.png"}/
+          .col-lg-2.col-md-4.col-6
+            %img.img-fluid{:alt => "", :src => "/img/clients/client-5.png"}/
+          .col-lg-2.col-md-4.col-6
+            %img.img-fluid{:alt => "", :src => "/img/clients/client-6.png"}/
   / ======= Services Section =======
   %section#services.services
     .container
       .section-title
         %span Services
         %h2 Services
-        %p ?
+        %p ???
       .row
         .col-lg-4.col-md-6.d-flex.align-items-stretch{"data-aos" => "fade-up"}
           .icon-box
             .icon
               %i.bx.bx-world
-            %h4
-              %a{:href => ""} Save On Energy
-            %p Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi
+            %h4 Residential
+            .box-hover
+              %p Voluptatum de
         .col-lg-4.col-md-6.d-flex.align-items-stretch.mt-4.mt-md-0{"data-aos" => "fade-up", "data-aos-delay" => "150"}
           .icon-box
             .icon
               %i.bx.bx-home-smile
-            %h4
-              %a{:href => ""} Testimonials
-            %p Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+            %h4 Commercial
+            .box-hover
+              %p Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
         .col-lg-4.col-md-6.d-flex.align-items-stretch.mt-4.mt-lg-0{"data-aos" => "fade-up", "data-aos-delay" => "300"}
           .icon-box
             .icon
               %i.bx.bx-network-chart
-            %h4
-              %a{:href => ""} Promotions
-            %p Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-        -# .col-lg-4.col-md-6.d-flex.align-items-stretch.mt-4{"data-aos" => "fade-up", "data-aos-delay" => "450"}
-        -#   .icon-box
-        -#     .icon
-        -#       %i.bx.bxs-truck
-        -#     %h4
-        -#       %a{:href => ""} Careers
-        -#     %p At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
-        -# .col-lg-4.col-md-6.d-flex.align-items-stretch.mt-4{"data-aos" => "fade-up", "data-aos-delay" => "600"}
-        -#   .icon-box
-        -#     .icon
-        -#       %i.bx.bx-buildings
-        -#     %h4
-        -#       %a{:href => ""} Useful Resources
-        -#     %p Quis consequatur saepe eligendi voluptatem consequatur dolor consequuntur
-        -# .col-lg-4.col-md-6.d-flex.align-items-stretch.mt-4{"data-aos" => "fade-up", "data-aos-delay" => "750"}
-        -#   .icon-box
-        -#     .icon
-        -#       %i.bx.bx-home-heart
-        -#     %h4
-        -#       %a{:href => ""} Multimedia
-        -#     %p Modi nostrum vel laborum. Porro fugit error sit minus sapiente sit aspernatur
-  / End Services Section
-  / ======= Cta Section =======
-  %section#cta.cta
-    .container{"data-aos" => "zoom-in"}
-      .text-center
-        %h3 Contact Us
-        %p Give us a call to discuss your electrical needs
-        -# %a.margin-10px-right.cta-btn{:href => "+1-416-418-5374"} Call
-        = link_to "Call", "tel:14164185374", class: 'cta-btn'
-        -# %a.cta-btn{:href => "root_url"} Email
-        -# = link_to "Email", '#contact', class: 'cta-btn'
-        = link_to "Email", "mailto:miguel@mydanservices.com", class: 'cta-btn'
-  / End Cta Section
+            %h4 Industrial
+            .box-hover
+              %p Excepteur sint <br>occaecat cupidatat non <br>proident, sunt in culpa <br>qui officiaExcepteur sint <br>occaecat cupidatat non <br>proident, sunt in culpa <br>qui officia
   / ======= Portfolio Section =======
   %section#portfolio.portfolio
     .container
       .section-title
-        %span Gallery
+        %span See Some of Our Latest Work
         %h2 See Some of Our Latest Work
         %p
       .row{"data-aos" => "fade-up"}
@@ -247,7 +207,14 @@
         -#       %i.bx.bx-plus
         -#     %a.details-link{:href => "portfolio-details.html", :title => "More Details"}
         -#       %i.bx.bx-link
-  / End Portfolio Section
+  / ======= Cta Section =======
+  %section#cta.cta
+    .container{"data-aos" => "zoom-in"}
+      .text-center
+        %h3 Contact Us
+        %p Give us a call to discuss your electrical needs
+        = link_to "Call", "tel:14164185374", class: 'cta-btn'
+        -# = link_to "Email", "mailto:miguel@mydanservices.com", class: 'cta-btn'
   / ======= Team Section =======
   %section#team.team
     .container
@@ -290,7 +257,6 @@
               -#   %i.icofont-instagram
               -# %a{:href => ""}
               -#   %i.icofont-linkedin
-  / End Team Section
   / ======= Contact Section =======
   %section#contact.contact
     .container
@@ -347,6 +313,3 @@
             .text-center
               =f.submit 'Send Message', class: 'button'
               -# %button{:type => "submit"} Send Message
-  / End Contact Section
-/ End #main
-/ ======= Footer =======

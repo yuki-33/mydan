@@ -813,8 +813,9 @@ section {
 # Cta
 --------------------------------------------------------------*/
 .cta {
-  background: linear-gradient(rgba(2, 2, 2, 0.5), rgba(0, 0, 0, 0.5)), url("../img/ernest-brillo.jpg") fixed center center;
+  background: linear-gradient(rgba(2, 2, 2, 0.4), rgba(0, 0, 0, 0.4)), url("../img/ernest.jpg") fixed center center;
   background-size: cover;
+  width: 100%;
   padding: 120px 0;
 }
 
@@ -848,12 +849,11 @@ section {
   border: 2px solid #00008B;
 }
 
-// @media (max-width: 768px) {
-//   .cta {
-//     background: linear-gradient(rgba(2, 2, 2, 0.5), rgba(0, 0, 0, 0.5)), url("../img/ernest-brillo.jpg") fixed center center;
-//     background-size: cover;
-//     }
-// }
+@media (max-width: 768px) {
+  .cta {
+    padding-top: 60%;
+    }
+}
 /*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/

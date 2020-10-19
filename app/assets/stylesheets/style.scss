@@ -851,8 +851,11 @@ section {
 
 @media (max-width: 768px) {
   .cta {
-    padding-top: 60%;
-    }
+    background: linear-gradient(rgba(2, 2, 2, 0.4), rgba(0, 0, 0, 0.4)), url("../img/cta-small.jpg") fixed center center;
+    background-size: cover;
+    width: 100%;
+    padding: 120px 0;
+  }
 }
 /*--------------------------------------------------------------
 # Portfolio

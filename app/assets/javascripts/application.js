@@ -7,5 +7,7 @@
 //= require owl.carousel/owl.carousel.min
 //= require aos/aos
 //= require main
+//= require jquery3
+//= require popper
+//= require bootstrap-sprockets
 //= require common
-//= require_tree .

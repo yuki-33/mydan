@@ -7,16 +7,15 @@ class HomeController < ApplicationController
     @inquiry = Inquiry.new(inquiry_params)
     if @inquiry.valid?
       InquiryMailer.send_when_submit(@inquiry).deliver
-      redirect_to root_path, notice: 'Your Message has been sent.'
+      redirect_to root_path, notice: 'Sent. You will hear from us within 24 hours.'
     else
       render "index"
     end
   end
 
 
-
-
   private
+
   def inquiry_params
     params[:inquiry].permit(
       :email,

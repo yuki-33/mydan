@@ -637,6 +637,7 @@ section {
   display: inline-block;
   vertical-align:  top;
   margin-right: 20px;
+  margin-bottom: 0;
   padding: 0;
 }
 
@@ -651,6 +652,7 @@ section {
 }
 
 .about .content p:last-child {
+  margin-top: 10px;
   margin-bottom: 0;
 }
 

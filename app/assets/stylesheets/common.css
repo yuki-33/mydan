@@ -5,6 +5,13 @@
   z-index: 997;
 } */
 
+
+@media (max-width: 992px) {
+.section-top-none {
+  padding-top: 0;
+  }
+}
+
 /*--------------------------------------------------------------
 # Message Bar
 --------------------------------------------------------------*/
@@ -13,25 +20,16 @@
   z-index: 980;
   top: 105px;
   margin-bottom: 0;
+  width: 100%;
+  max-width: 720px;
 }
 
 #message.message-scrolled {
   top: -40px;
 }
 
-/*--------------------------------------------------------------
-# Services
---------------------------------------------------------------*/
-.services .icon-box #residential, .services .icon-box #commercial, .services .icon-box #industrial {
-  /* height: 150px; */
-  /* position: absolute; */
-  /* line-height: 24px;
-  font-size: 14px;
-  margin-bottom: 0;
-  top: -180px;
-  transition: all ease-in-out 0.3s; */
-}
-.services .icon-box:hover #industrial, .services .icon-box #commercial {
-  /* color: #fff;
-  top: 180px; */
+@media (max-width: 992px) {
+  #message {
+    top: 70px;
+  }
 }

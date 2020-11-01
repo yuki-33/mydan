@@ -38,8 +38,10 @@
     -if notice.present?
       #message.fixed-top
         .container
-          %p.notice.alert.alert-dark{:role => "alert"}
+          %p.notice.alert.alert-dark.notice-grey.alert-dismissible.fade.show{:role => "alert"}
             =notice
+            %button.close{"aria-label" => "Close", "data-dismiss" => "alert", :type => "button"}
+              %span{"aria-hidden" => "true"} ×
     = yield
     =render 'footer'
     %a.back-to-top{:href => "#"}

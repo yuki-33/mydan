@@ -16,20 +16,34 @@
 # Message Bar
 --------------------------------------------------------------*/
 #message {
-  transition: all 0.5s;
+  transition: all 0.8s;
   z-index: 980;
   top: 105px;
   margin-bottom: 0;
-  width: 100%;
-  max-width: 720px;
 }
 
 #message.message-scrolled {
   top: -40px;
 }
 
+.notice-grey {
+  background-color: rgba(214,216,217,0.9);
+	box-shadow: 0 2px 3px rgba(0, 0, 0, 0.8);
+}
+
+
 @media (max-width: 992px) {
   #message {
     top: 70px;
+  }
+}
+
+@media (max-width: 768px) {
+  .notice-grey {
+    font-size: 14px;
+    padding: 10px 10px 10px 15px;
+  }
+  .alert-dismissible .close {
+  padding: 0.5rem 0.8rem;
   }
 }

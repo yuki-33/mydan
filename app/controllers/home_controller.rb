@@ -9,7 +9,7 @@ class HomeController < ApplicationController
       InquiryMailer.send_when_submit(@inquiry).deliver
       redirect_to root_path, notice: 'Sent. You will hear from us within 24 hours.'
     else
-      render "index"
+      render 'index'
     end
   end
 

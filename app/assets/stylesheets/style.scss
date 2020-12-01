@@ -896,7 +896,7 @@ section {
   bottom: 0;
   z-index: 3;
   transition: all ease-in-out 0.3s;
-  background: rgba(255, 255, 255, 0.9);
+  // background: rgba(255, 255, 255, 0.9);
   padding: 15px;
 }
 
@@ -918,14 +918,18 @@ section {
   right: 40px;
   font-size: 24px;
   top: calc(50% - 18px);
-  color: #333333;
+  color: rgba(255, 255, 255, 0.8);
 }
 
 .portfolio .portfolio-item .portfolio-info .preview-link:hover, .portfolio .portfolio-item .portfolio-info .details-link:hover {
-  color: #00008B;
+  color: #fff;
 }
 
-.portfolio .portfolio-item .portfolio-info .details-link {
+// .portfolio .portfolio-item .portfolio-info .details-link {
+//   right: 10px;
+// }
+
+.portfolio .portfolio-item .portfolio-info .preview-link {
   right: 10px;
 }
 
